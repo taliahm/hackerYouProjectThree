@@ -1,0 +1,154 @@
+//TABULATING PAGE
+.tabSection h2 {
+	@include h2();
+}
+
+.tabSection h2 span {
+	display:block;
+}
+
+#showResults{
+	@include button($yellow, black); 
+	margin-top: 30px;
+	position: relative;
+}
+
+.fortuneSection h2 {
+	@include h2();
+}
+
+.results {
+	font-size: 1.6rem;
+	background-color: lighten($backgroundBlue, 10);
+	border: 1px solid $backgroundBlue;
+	border-radius: 5px;
+	padding: 25px 0;
+	max-width:40%;
+	margin: 0 auto;
+	letter-spacing: 1.4px;
+	line-height: 1.4;
+	@include bp('lrg') {
+		max-width:80%;
+	}
+	@include bp('med'){
+		max-width: 90%;
+		padding: 25px 15px;
+	}
+}
+
+#randomNum {
+	font-size: 10rem;
+	text-shadow: -4px -4px 1px lighten($backgroundPink, 30);
+	@include bp('med'){
+		padding:0;
+		margin:0;
+	}
+}
+
+.heart .fa-heart {
+	font-size: 4rem;
+	color:red;
+	position: absolute;
+	opacity: 0;
+	transition:all 0.3s;
+}
+
+//Button Animation
+#showResults:hover  i.fa-heart.fa:first-child{
+	animation: heartfall 4s forwards;
+	color:red;
+}
+
+#showResults:hover  i.fa-heart.fa:nth-child(2){
+	animation: heartfallOne 4s forwards;
+	color:red;
+}
+
+#showResults:hover  i.fa-heart.fa:nth-child(3){
+	animation: heartfallTwo 4s ease-out forwards;
+	color:purple;
+}
+
+#showResults:hover  i.fa-heart.fa:nth-child(4){
+	animation: heartfallThree 4s ease-out forwards;
+	color:purple;
+}
+
+#showResults:hover  i.fa-heart.fa:nth-child(5){
+	animation: heartfallFour 4s ease-out forwards;
+	color:purple;
+}
+
+#showResults:hover  i.fa-heart.fa:nth-child(6){
+	animation: heartfallFive 4s ease-out forwards;
+	color:purple;
+}
+
+
+
+
+//FORTUNE PAGE
+#mashAnswer, #jobAnswer, #loveAnswer, #kidAnswer {
+	font-size: 2rem;
+	background-color: lighten($backgroundPink, 30);
+	padding: 20px 0;
+	max-width: 60%;
+	margin: 10px auto;
+	@include bp('med') {
+		max-width: 90%;
+	}
+}
+
+#mashAnswer {
+	margin-top: 40px;
+}
+
+.share {
+	@include button($yellow, black);
+	margin-top: 10px;
+	display: block;
+	margin: 20px auto 10px auto;
+	position: relative;
+	a {
+		text-decoration: none;
+		color:black
+	}
+}
+
+.share i.fa-twitter {
+	opacity: 0;
+	position: absolute;
+	top:0;
+}
+.share:hover i.fa-twitter {
+	animation: tweetFly 4s ease-out forwards;
+	color: lightblue;
+}
+
+#restart {
+	@include button($yellow, black);
+	margin: 10px auto;
+	display: block;
+}
+
+footer {
+	font-size: 1.4rem;
+}
+
+footer p{
+	margin:0;
+}
+
+footer a{
+	text-decoration: none;
+	color:black;
+	transition: all 0.3 ease-in;
+	&:hover {
+		color:$mainText;
+	}
+}
+footer i.fa-heart {
+	color:red;
+	font-size: 1.8rem;
+}
+

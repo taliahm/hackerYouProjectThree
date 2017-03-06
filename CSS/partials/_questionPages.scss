@@ -1,0 +1,122 @@
+//Universal Question Page Styling
+#alertJob, #alertLove, #alertKids {
+	font-size: 1.6rem;
+	background-color: $backgroundBlue;
+	padding: 25px 0;
+	display: none;
+	max-width:60%;
+	margin: 0 auto;
+	transition: all 0.3s ease-in;
+	// border-radius: 5px;
+	@include bp('med') {
+		max-width: 90%;
+		padding: 25px 10px;
+	}
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+//MASH PAGE
+.homeSection ul {
+	text-align: left;
+	list-style:none;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0;
+		li {
+		font-size: 3rem;
+		font-family: $handFour;
+		}
+		li:first-child{
+			position: relative;
+			left: -15px;
+		}
+}
+
+.homeSection h2 {
+	@include h2();
+}
+
+.homeSection h4 {
+	margin:0;
+}
+.homeSection h5 {
+	margin:6px 0 40px 0;
+	font-size: 1.6rem;
+	letter-spacing: 1.2px;
+	@include bp('sml'){
+		margin: 6px 0 20px 0;
+	}
+}
+
+.bigLetter {
+	font-size:  11rem;
+	padding-right: 5px;
+	font-family: $sanSerif;
+	text-shadow: -4px -4px 1px lighten($backgroundPink, 30);
+	@include bp('sml') {
+		font-size: 9rem;
+		margin:0;
+	}
+}
+
+#homeButton{
+	@include button($yellow, black); 
+	margin-top: 30px;
+}
+
+//Job Question Section
+.jobSection input[type=text] {
+	@include inputStyle();
+	display: block;
+	margin: 15px auto;
+
+}
+
+#jobButton {
+	@include button($yellow, black);
+	margin-top: 20px;
+}
+.jobSection h2{
+
+	@include h2();
+}
+
+//Love Question Section
+.loveSection input[type=text] {
+	@include inputStyle();
+	display: block;
+	margin:15px auto;
+}
+
+#loveButton {
+	@include button($yellow, black);
+	margin-top: 20px;
+}
+
+.loveSection h2 {
+	@include h2();
+}
+
+//Kid Question Section
+.kidSection input[type=number] {
+	@include inputStyle();
+	display: block;
+	margin:15px auto;
+	@include bp('med') {
+		font-size: 2.5rem;
+	}
+	@include bp('sml') {
+		font-size: 2rem;
+	}
+}
+
+.kidSection h2 {
+	@include h2();
+}
+
+#kidButton {
+	@include button($yellow, black);
+	margin-top: 20px;
+}
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	TO DO (overall):
+	
+	-> Responsive
+
+
+
+
+
+
+	COMPLETED:
+
+	- numbers only for children input
+	- Twitter/ share button
+	- Create some type of conditional statement to verify input answers
+	- Check to make sure user isn't entering same values
+	-> fix random number generator so 0 is not an option (now using .ceil)
+	-> Fix wording on love section 
+	-> create variables (in SASS)
+	-> font awesome emojis (noun project)
+	-> colors (bright?) for each page
+	-> fonts/styling
+	-> Make voodoo number work 
+	-> CSS (Complete instruction hover card)
+	-> fix negative number bug on kid section
+	-> Hover instructions (flickers--need to fix)
+
+
+	
+	<!-- SECTION: HOW GAME WORKS -->
+	
+	<!-- *Each step outlined in 'HOW GAME LOOKS' will appear on the same page, but display none will help remove previous question and provide a smooth transition between each one (yay!)
+	
+	1. Page (design, tbd) will have following question: "Do you want us to read your future? Play MASH with us?" when you click on yes it will direct you to next questions.
+	
+	1 a) The word "MASH" will be highlighted and when hovered will provide instructions for the game. 
+	
+	2. First box appears on screen with the words "MASH" that describes to users what the Mansion, Apartment, Shack, house options actually mean. A button in the bottom right corner appears with the words "next" which will take user to next screen via display none. This button will hide current information and then will display next info.
+	
+	3. A second box will show jobs header with four input fields underneath that show where user will include four job options. If user does not enter all four fields a message will pop up that reminds user to fill out entire set of boxes.
+	
+	A button in the right corner appears with the words "next" which will take user to next screen via display none. This button will hide current information and then will display next info.
+	
+	4.  A third box will show love header with four input fields underneath that show where user will include four love options. If user does not enter all four fields a message will pop up that reminds user to fill out entire set of boxes.
+	
+	A button in the right corner appears with the words "next" which will take user to next screen via display none. This button will hide current information and then will display next info.
+	
+	5. A fifth box will show children header with four input fields underneath that show where user will include four job options. If user does not enter all four fields a message will pop up that reminds user to fill out entire set of boxes.
+	
+	6. A button in the right corner appears with the words "next" which will take user to next screen that says "Results are being tabulated". Behind the scenes a Math.floor(Math.random()) will come up with a random number between 1 and 15. Once this number is achieved it will appear on screen for 10 seconds (0:30 min). 
+	
+	7. The random number will be input into MASH options and the correct answer will appear on screen. 
+	
+	
+	<!SECTION: HOW GAME LOOKS -->
+	<!-- 1. Title: MASH
+	2. Instruction card (can be changed later)
+	3. Question section 1 (MASH): 
+		- Header: MASH in bold 
+		- Box details Mansion Apartment Shack House (MASH)
+	
+	4. Question section 2 (jobs):
+		- Header: Jobs
+		- User fills in four job inputs. When user finishes filling in input field they can click on "next" to advance.
+	
+	5. Question section 3 (Love): 
+		- Header: Love
+		- User fills in four love inputs. When user finishes filling in input field they can click on "next" to advance.
+	
+	6. Question section 4 (children):
+		- Header: Kids
+		- User fills in four children inputs. When user finishes filling in input field they can click on "next" to advance.
+	
+	7. Complete quiz:
+	
+		- User clicks on button that reads "play game" to tabulate random generated number that is then shown on screen (how it works will appear in "how game works" section)
+	
+	8. Result page:
+		- Result page appears and tells user "Your MASH fortune" is being tabulated with animated hearts that appear alongside it. 
+	
+	9. Fortune:
+		- User's fortune appears on screen. Underneath is an option to play again and share on Twitter. 
+	 --> 
+	<!-- 
+	//
+	THIS IS A NOTE ABOUT HOW YOU CAN RETURN INPUTS FROM AN ARRAY IN A DIFFERENT WAY -->
+	
+	$(function(){
+		$('#jobButton').on('click', function(){
+			console.log('clicked');
+	
+			var jobAnswer = [$('#job1').val(), $('#job2').val(), $('#job3').val(), $('#job4').val()];
+			console.log(jobAnswer);
+			
+			OR
+			<!-- // var jobAnswer = $('#job2').val();
+			// console.log(jobAnswer);
+	
+			// var jobAnswer = $('#job3').val();
+			// console.log(jobAnswer);
+	
+			// var jobAnswer = $('#job4').val();
+			// console.log(jobAnswer); -->
+		})</div>
+	
+</body>
+</html>

@@ -1,0 +1,249 @@
+.background {
+	background-color: darken($backgroundPurple,5);
+	position: relative;
+}
+
+.imgContain {
+	position: absolute;
+	display: inline-block;
+	img {
+		width:5%;
+	}
+}
+
+.introSection h1 {
+	margin:0;
+	padding: 40px 0 0 0;
+	font-size: 14rem;
+	color: $mainText;
+	letter-spacing: 5px;
+
+	@include bp('sml') {
+
+		font-size: 10rem;
+		padding: 0 10px 0 10px;
+	}
+}
+
+.introSection h1 span {
+	display: block;
+}
+
+.introSection .fancyContainer {
+	display: flex;
+	justify-content: center;
+	margin: 30px 0;
+	@include bp('smlMed') {
+		flex-wrap: wrap;	
+	}
+}
+
+.fancyBoxContain {
+	display: flex;
+}
+
+.fancyBox {
+	background-color: $backgroundBlue;
+	height: 50px;
+	width: 50px;
+	border: 2px solid yellow;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:20px 12px 20px 0;
+	text-transform: uppercase;
+	box-shadow: 2px 2px 2px black;
+	font-size: 1.8rem;
+	text-shadow: 1px 1px 1px black;
+	 transform-origin: bottom center;
+}
+	
+ .fancyBoxContainLeft .fancyBox:nth-child(1) {
+	transform: rotate(15deg) translateY(-30px);
+	 @include bp('smlMed') {
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+
+.fancyBoxContainLeft .fancyBox:nth-child(2) {
+	transform: rotate(14deg) translateY(-17px);
+	 @include bp('smlMed') {
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+
+.fancyBoxContainLeft .fancyBox:nth-child(3) {
+	transform: rotate(13deg) translateY(-8px);
+	 @include bp('smlMed') {
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+
+.fancyBoxContainLeft .fancyBox:nth-child(3) {
+	transform: rotate(12deg) translateY(-5px);
+	 @include bp('smlMed') {
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+
+.fancyBoxContainLeft .fancyBox:nth-child(4) {
+	transform: rotate(10deg) translateY(6px);
+	 @include bp('smlMed') {
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+
+.fancyBoxContainRight .fancyBox:nth-child(1) {
+	transform: rotate(0deg) translateY(12px);
+	 @include bp('smlMed') {
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+
+.fancyBoxContainRight .fancyBox:nth-child(2) {
+	transform: rotate(-10deg) translateY(6px);
+	 @include bp('smlMed') {
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+
+.fancyBoxContainRight .fancyBox:nth-child(3) {
+	transform: rotate(-12deg) translateY(-5px);
+	 @include bp('smlMed') {
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+.fancyBoxContainRight .fancyBox:nth-child(4) {
+	transform: rotate(-13deg) translateY(-17px);
+	 @include bp('smlMed') {
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+.fancyBoxContainRight .fancyBox:nth-child(5) {
+	transform: rotate(-14deg) translateY(-30px);
+	 @include bp('smlMed') {
+		transform: rotate(0deg) translateY(0px);
+	}
+}	
+	
+
+.fancyBoxContainLeft .fancyBox:nth-child(1) {
+	transform: rotate(15deg) translateY(-30px);
+	 @include bp('smlMed') {
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+
+.fancyBoxContainLeft .fancyBox:nth-child(2) {
+	transform: rotate(14deg) translateY(-17px);
+	 @include bp('smlMed') {
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+
+.fancyBoxContainLeft .fancyBox:nth-child(3) {
+	transform: rotate(13deg) translateY(-8px);
+	 @include bp('smlMed') {
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+
+.fancyBoxContainLeft .fancyBox:nth-child(3) {
+	transform: rotate(12deg) translateY(-5px);
+	 @include bp('smlMed') {
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+
+.fancyBoxContainLeft .fancyBox:nth-child(4) {
+	transform: rotate(10deg) translateY(6px);
+	 @include bp('smlMed') {
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+
+.fancyBoxContainRight .fancyBox:nth-child(1) {
+	transform: rotate(0deg) translateY(12px);
+	 @include bp('smlMed') {
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+
+.fancyBoxContainRight .fancyBox:nth-child(2) {
+	transform: rotate(-10deg) translateY(6px);
+	 @include bp('smlMed') {
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+
+.fancyBoxContainRight .fancyBox:nth-child(3) {
+	transform: rotate(-12deg) translateY(-5px);
+	 @include bp('smlMed') {
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+.fancyBoxContainRight .fancyBox:nth-child(4) {
+	transform: rotate(-13deg) translateY(-17px);
+	 @include bp('smlMed') {
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+.fancyBoxContainRight .fancyBox:nth-child(5) {
+	transform: rotate(-14deg) translateY(-30px);
+	 @include bp('smlMed') {
+		transform: rotate(0deg) translateY(0px);
+	}
+}
+
+.instructions {
+	display: none;
+	background-color: transparentize($backgroundBlue, 0.1);
+	border: 2px solid $mainText;
+	border-radius: 5px;
+	width: 50%;
+	font-size: 1.5rem;
+	margin: 20px auto 10px auto;
+	padding: 20px 0;
+	position: absolute;
+	top: 50%;
+	z-index: 99;
+	transform: translate(50%, -50%);
+	// color: $mainText;
+	h4 {
+		margin:0;
+	}
+	ol {
+		text-align: left;
+		@include bp('sml') {
+			padding: 0 25px;
+		}
+	}
+
+		@include bp('lrg') {
+		font-size: 1.6rem;
+		transform: translate(0%, -50%);
+		width: 100%; 
+		// top:35%;
+	}
+}
+
+
+
+#play {
+	@include button(yellow, black);
+	margin-right: 20px;
+
+}
+
+
+#howToPlay {
+	@include button(yellow, black);
+}
+
+
+
+// @if ($size =='med') {
+// 	@media (max-width: $bp-medium){
+// 		@content;
+// 	}
+// }

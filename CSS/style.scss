@@ -1,0 +1,89 @@
+@import 'partials/normalize' ;
+@import 'partials/variables';
+@import 'partials/introPage';
+@import 'partials/questionPages';
+@import 'partials/tabPage';
+@import 'partials/resultsPage';
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: $sanSerif;
+	background-color: darken($backgroundPurple,5);
+}
+
+.homeSection, .jobSection, .loveSection, .kidSection, .tabSection, .fortuneSection {
+	display: none;
+}
+
+.background {
+	padding-bottom: 40px;
+}
+
+.wrapper {
+	max-width: 905px;
+	margin:0 auto;
+	z-index: 5;
+	position: relative;
+	background: transparentize($backgroundPurple, 0.3);
+	border-radius: 10px;
+	padding-bottom: 40px;
+
+	@include bp('lrg'){
+		max-width: 90%;
+	}
+	@include bp('sml') {
+		max-width: 100%;
+		padding: 0 2px 40px 2px;
+
+	}
+}
+
+\
+input {
+	font-family: $handFour;
+}
+
+
+header h4 {
+	font-size: 2rem;
+	margin:0 0 40px 0;
+	@include bp('sml') {
+		padding:0 5px;
+	}
+}
+
+
+.section {
+	text-align: center;
+}
+
+.tab {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+.tab p {
+	color:purple;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	margin: 15px 7px 0 7px;
+	display:none;
+}
+
+.animate {
+	display: block;
+}
+
+
+
+
+@keyframes pDance {
+
+}
+
+//when Tab section shows
+//each P element will been shown on the page, one at a time. 
